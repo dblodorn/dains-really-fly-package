@@ -1,0 +1,21 @@
+{
+  "name": "@derpyvision/fly-package",
+  "version": "1.0.0",
+  "description": "This is just a test",
+  "main": "dist/derpyvision-fly-package.cjs.js",
+  "module": "dist/derpyvision-fly-package.esm.js",
+  "author": "Dain Blodorn Kim",
+  "license": "MIT",
+  "public": true,
+  "files": [
+    "/dist"
+  ],
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

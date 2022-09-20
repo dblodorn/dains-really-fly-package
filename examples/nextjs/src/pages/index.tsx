@@ -1,14 +1,10 @@
-import { TestComponent } from 'react-package'
-import { useAccount } from 'wagmi'
-import { DynamicComponent } from './../components/example/DynamicComponent'
+import { FlyComponent } from '@derpyvision/fly-package'
 
 function Page() {
-  const { address } = useAccount()
-  
   return (
     <section className="flex flex-col gap-4">
-      <TestComponent />
-      {address ? <DynamicComponent address={address} /> : null}
+      <h1>FRESH START</h1>
+      <FlyComponent flyText="hey there!!!"/>
     </section>
   )
 }

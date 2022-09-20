@@ -1,11 +1,11 @@
 {
+  "private": true,
   "name": "assemble-package",
   "version": "1.0.0",
   "description": "NPM package boilerplate",
   "main": "index.js",
   "author": "Public Assembly",
   "license": "MIT",
-  "private": true,
   "workspaces": [
     "packages/*",
     "examples/*"
@@ -15,7 +15,7 @@
     "example:react": "preconstruct dev && cd examples && cd react && yarn dev",
     "build": "preconstruct build",
     "postinstall": "preconstruct dev",
-    "publish": "yarn preconstruct build && yarn changeset publish"
+    "release": "preconstruct build && changeset && changeset publish"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
