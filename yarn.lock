@@ -1222,11 +1222,6 @@
     stream-browserify "^3.0.0"
     util "^0.12.4"
 
-"@derpyvision/fly-package@workspace:^":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@derpyvision/fly-package/-/fly-package-1.0.0.tgz#7cd0e82a4e0399b3e769fdb3b74d17b5134af06e"
-  integrity sha512-qUxZqLRFLTpQRsfs51nYmOmAvkNDGGbcuLZxmqb2UvkHaovItxqg00Y8Lu666yW/5xt08yQ27fUCc/5vrsUsxA==
-
 "@emotion/hash@^0.8.0":
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"

@@ -2,16 +2,16 @@
   "name": "reactjs-dapp",
   "version": "1.0.0",
   "description": "Sample react app to test your pluginz",
-  "main": "index.js",
   "author": "Public Assembly",
   "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "clean": "rimraf --no-glob dist"
   },
   "dependencies": {
-    "@derpyvision/fly-package": "workspace:^",
+    "@derpyvision/fly-package": "*",
     "@rainbow-me/rainbowkit": "^0.6.0",
     "@zoralabs/nft-hooks": "^1.1.9",
     "@zoralabs/zdk": "^2.1.8",

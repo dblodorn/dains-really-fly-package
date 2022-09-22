@@ -14,13 +14,11 @@
     "clean": "yarn clean:global-cache && yarn workspaces foreach -P run clean",
     "clean:global-cache": "rimraf --no-glob ./.cache ./.yarn ./.parcel-cache node_modules",
     "build:packages": "preconstruct build",
-    "build:examples": "yarn workspaces foreach -ptv --include '*-dapp' run build",
     "build:next": "yarn workspace nextjs-dapp run build",
     "build:react": "yarn workspace reactjs-dapp run build",
     "example": "preconstruct dev && yarn workspaces foreach -ptv --include '*-dapp' run dev",
     "example:next": "preconstruct dev && yarn workspace nextjs-dapp run dev",
     "example:react": "preconstruct dev && yarn workspace reactjs-dapp run dev",
-    "postinstall": "preconstruct dev",
     "release": "preconstruct build && changeset && changeset publish",
     "init:workspaces": "yarn plugin import workspace-tools"
   },
@@ -39,8 +37,5 @@
       "packages/*"
     ]
   },
-  "engines": {
-    "node": "^14.13.1 || >=16.0.0",
-    "npm": "please-use-yarn"
-  }
+  "packageManager": "yarn@1.22.1"
 }
