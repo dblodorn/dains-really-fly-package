@@ -10,6 +10,9 @@
   "files": [
     "/dist"
   ],
+  "scripts": {
+    "clean": "rimraf --no-glob dist"
+  },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
