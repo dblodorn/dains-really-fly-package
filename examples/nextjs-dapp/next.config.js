@@ -1,10 +1,8 @@
-/** @type {import('next').NextConfig} */
+const withTM = require('next-transpile-modules')(['@derpyvision/fly-package']); // pass the modules you would like to see transpiled
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    externalDir: true,
-  },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(md|mdx)?$/,
@@ -20,4 +18,4 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+module.exports = withTM({nextConfig})
